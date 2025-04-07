@@ -1,7 +1,6 @@
 import { hc } from 'hono/client';
 
 import { AppType } from '@/app/api/[[...route]]/route';
+import { env } from '@/config/env';
 
-export const client = hc<AppType>(
-  process.env.NEXT_PUBLIC_BASE_URL ?? 'http://localhost:3000',
-);
+export const client = hc<AppType>(env.NEXT_PUBLIC_BASE_URL);
