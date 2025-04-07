@@ -74,9 +74,10 @@ export function CarsCarousel() {
         <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10" />
         {carsQuery.isLoading && (
           <div className="flex justify-center gap-4 items-center w-full h-full">
-            <Skeleton className="w-1/3 h-72" />
-            <Skeleton className="w-1/3 h-72" />
-            <Skeleton className="w-1/3 h-72" />
+            <Skeleton className="w-1/4 h-72" />
+            <Skeleton className="w-1/4 h-72" />
+            <Skeleton className="w-1/4 h-72" />
+            <Skeleton className="w-1/4 h-72" />
           </div>
         )}
         <Carousel className={cn('w-full h-fit')} opts={{ align: 'center' }}>
