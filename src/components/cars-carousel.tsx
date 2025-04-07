@@ -70,10 +70,7 @@ export function CarsCarousel() {
       <div className="relative">
         <div className="absolute -left-3 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10" />
-        <Carousel
-          className={cn('w-full h-fit', 'px-4 sm:px-0')}
-          opts={{ align: 'center' }}
-        >
+        <Carousel className={cn('w-full h-fit')} opts={{ align: 'center' }}>
           <CarouselContent>
             {filteredCars.map((car) => (
               <CarouselItem
@@ -129,7 +126,7 @@ export function CarsCarousel() {
             <CarouselPrevious size="iconLg" />
             <CarouselNext size="iconLg" />
           </div>
-          <div className="flex lg:hidden justify-center">
+          <div className="flex lg:hidden justify-center mt-4">
             <CarouselDots />
           </div>
         </Carousel>

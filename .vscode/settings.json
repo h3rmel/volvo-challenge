@@ -6,6 +6,7 @@
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
     "next.config.ts": "next-env.d.ts, components.json",
-    "eslint.config.mjs": ".prettierrc.mjs, postcss.config.mjs"
+    "eslint.config.mjs": ".prettierrc.mjs, postcss.config.mjs",
+    ".env": ".env.*"
   }
 }

@@ -1,14 +1,12 @@
 import { Hono } from 'hono';
 
+import { env } from '@/config/env';
 import { Car } from '@/types/car';
 
 const app = new Hono().get('/', async (c) => {
   try {
     const response = await fetch(
-      new URL(
-        '/api/cars.json',
-        process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
-      ),
+      new URL('/api/cars.json', env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
     );
     const cars: Car[] = await response.json();
 

@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 
 export default function Home() {
   return (
-    <main className={cn('max-w-screen-xl mx-auto py-8', 'space-y-8')}>
+    <main className={cn('max-w-screen-xl mx-auto py-8 px-4 sm:px-0', 'space-y-8')}>
       <Image
         src="/volvo-logo.png"
         alt="Volvo"
