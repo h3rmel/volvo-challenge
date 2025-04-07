@@ -107,14 +107,14 @@ export function CarsCarousel() {
                   </CardContent>
                   <CardFooter className="gap-4 justify-center">
                     <Link
-                      href={`/learn?id=${car.id}`}
+                      href={`/learn/${car.id}`}
                       className={cn(buttonVariants({ variant: 'ghost', size: 'lg' }))}
                     >
                       Learn
                       <ChevronRight className="size-4" />
                     </Link>
                     <Link
-                      href={`/shop?id=${car.id}`}
+                      href={`/shop/${car.id}`}
                       className={cn(buttonVariants({ variant: 'ghost', size: 'lg' }))}
                     >
                       Shop
